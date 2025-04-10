@@ -18,7 +18,7 @@ export default function Products() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Our <span className="neon-text">Products</span>
+            Our <span className="neon-text">Produce</span>
           </motion.h2>
           <motion.p 
             className="text-lg text-white/70 max-w-2xl mx-auto"
@@ -105,6 +105,7 @@ export default function Products() {
                 </motion.div>
               </div>
             </div>
+            
 
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 h-8 w-8 border-t-2 border-r-2 border-neon-green"></div>
