@@ -22,7 +22,7 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'OBVSLY - Obvious Solutions for Common Problems',
+  title: 'OBVSLY. Obvious Solutions for Common Problems.',
   description: 'We create obvious solutions for common problems. Creators of Grass - the inbox, reinvented.',
 }
 

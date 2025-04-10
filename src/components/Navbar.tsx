@@ -30,9 +30,8 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <Logo className="h-8 w-auto" />
-          <span className="font-display text-xl tracking-wider">OBVSLY</span>
+        <Link href="/" className="flex items-center">
+          <Logo className="h-auto w-16" />
         </Link>
 
         <div className="hidden md:flex space-x-8">

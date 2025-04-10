@@ -11,13 +11,13 @@ const TEAM_MEMBERS = [
   },
   {
     name: 'Adam Styrkosz',
-    role: 'CTO',
+    role: 'CTO & Co-Founder',
     bio: 'Technical genius with an eye for detail, expertise in scalable architecture and developer experience. Brings technical precision and systematic thinking to every project.',
     image: '/images/team-placeholder.jpg',
   },
   {
     name: 'Łukasz Filipek',
-    role: 'COO',
+    role: 'COO & Co-Founder',
     bio: 'Operations mastermind with a talent for making impossible things happen. Excels at turning vision into executable strategy and creating systems that scale.',
     image: '/images/team-placeholder.jpg',
   },

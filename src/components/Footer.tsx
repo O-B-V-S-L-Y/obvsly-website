@@ -11,9 +11,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* Column 1 - Logo and info */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <Logo className="h-8 w-auto" />
-              <span className="font-display text-xl tracking-wider">OBVSLY</span>
+            <div className="flex items-center mb-4">
+              <Logo className="w-14 h-auto" />
             </div>
             <p className="text-white/60 text-sm mb-6">
               Creating obvious solutions for common problems.
