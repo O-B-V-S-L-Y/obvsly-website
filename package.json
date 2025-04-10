@@ -2,6 +2,7 @@
   "name": "obvsly-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://obvsly.pl",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
