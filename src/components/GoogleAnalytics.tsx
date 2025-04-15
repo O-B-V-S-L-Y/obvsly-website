@@ -21,9 +21,10 @@ export default function GoogleAnalytics() {
 
     // Consent Manager
     const script3 = document.createElement('script');
+    const id = '3669333412165';
     script3.type = 'text/javascript';
     script3.setAttribute('data-cmp-ab', '1');
-    script3.src = 'https://cdn.consentmanager.net/delivery/autoblocking/a5895374824c6.js';
+    script3.src = `https://cdn.consentmanager.net/delivery/autoblocking/${id}.js`;
     script3.setAttribute('data-cmp-host', 'a.delivery.consentmanager.net');
     script3.setAttribute('data-cmp-cdn', 'cdn.consentmanager.net');
     script3.setAttribute('data-cmp-codesrc', '0');
