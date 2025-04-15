@@ -20,7 +20,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-5xl mx-auto"
         >
-          <h1 className="text-6xl md:text-8xl font-display font-bold mb-4 tracking-tight">
+          <h1 className="text-5xl md:text-8xl font-display font-bold mb-4 tracking-tight">
             <span className="neon-text">O B V S L Y</span>
           </h1>
           
@@ -38,13 +38,14 @@ export default function Hero() {
             <div className="absolute -bottom-4 -right-4 h-8 w-8 border-b-2 border-r-2 border-neon-blue"></div>
             
             <p className="text-lg md:text-xl font-light leading-relaxed">
-              Great products aren't just built—they're <span className="font-semibold text-neon-green">methodically crafted</span> through validation, 
+              Great products aren&apos;t just built—they&apos;re <span className="font-semibold text-neon-green">methodically crafted</span> through validation, 
               testing, and iteration. We turn this process into a repeatable algorithm for startup success.
             </p>
           </motion.div>
           
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <motion.button 
+            <motion.a 
+              href="#products" 
               className="button-neon"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -54,9 +55,10 @@ export default function Hero() {
               }}
             >
               OUR TEAM
-            </motion.button>
+            </motion.a>
             
-            <motion.button 
+            <motion.a 
+              href="#vision"
               className="button-glass"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -66,7 +68,7 @@ export default function Hero() {
               }}
             >
               THE ALGORITHM
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>

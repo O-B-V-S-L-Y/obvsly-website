@@ -6,7 +6,7 @@ import Logo from './Logo';
 
 export default function Footer() {
   return (
-    <footer className="py-12 bg-obvsly-darker relative overflow-hidden">
+    <footer id="contact" className="py-12 bg-obvsly-darker relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* Column 1 - Logo and info */}
@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {['About', 'Team', 'Vision', 'Careers'].map((item) => (
                 <li key={item}>
-                  <Link href={`/${item.toLowerCase()}`} className="text-white/60 hover:text-neon-pink text-sm transition-colors">
+                  <Link href={`#${item.toLowerCase()}`} className="text-white/60 hover:text-neon-pink text-sm transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -68,13 +68,15 @@ export default function Footer() {
             <p className="text-white/60 text-sm mb-4">
               Sign up for updates on our latest products and company news.
             </p>
-            <div className="flex">
+            <div className="relative flex items-center w-full">
               <input
                 type="email"
                 placeholder="Your email"
-                className="glass-input text-sm flex-grow"
+                className="glass-input text-sm w-full pr-20 rounded-md"
               />
-              <button className="bg-neon-pink text-black px-4 font-display text-sm">
+              <button 
+                className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-neon-pink text-black px-4 py-1.5 font-display text-sm hover:bg-opacity-80 transition-colors"
+              >
                 SEND
               </button>
             </div>
