@@ -20,6 +20,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -35,14 +42,14 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex space-x-8">
-          {['Products', 'About', 'Team', 'Vision'].map((item) => (
-            <Link 
+          {['About', 'Team', 'Vision'].map((item) => (
+            <button 
               key={item} 
-              href={`/${item.toLowerCase()}`}
+              onClick={() => scrollToSection(item.toLowerCase())}
               className="font-display text-sm tracking-wider hover:text-neon-pink transition-colors"
             >
               {item.toUpperCase()}
-            </Link>
+            </button>
           ))}
         </div>
 

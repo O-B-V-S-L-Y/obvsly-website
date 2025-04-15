@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+// Import is kept but component won't be rendered
 import Products from '@/components/Products';
 import Team from '@/components/Team';
 import Vision from '@/components/Vision';
@@ -10,7 +11,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <Products />
+      {/* Products component removed temporarily */}
       <Team />
       <Vision />
       <Footer />

@@ -23,7 +23,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: 'OBVSLY. Obvious Solutions for Common Problems.',
-  description: 'We create obvious solutions for common problems. Creators of Grass - the inbox, reinvented.',
+  description: 'We create obvious solutions for common problems.',
 }
 
 export default function RootLayout({

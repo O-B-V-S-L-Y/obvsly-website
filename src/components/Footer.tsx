@@ -38,7 +38,7 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-sm tracking-wider text-white/80 mb-4">PRODUCTS</h3>
             <ul className="space-y-2">
-              {['Grass', 'Coming Soon'].map((item) => (
+              {['Coming Soon'].map((item) => (
                 <li key={item}>
                   <Link href="/" className="text-white/60 hover:text-neon-pink text-sm transition-colors">
                     {item}

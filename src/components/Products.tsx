@@ -2,9 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import GrassIcon from './GrassIcon';
 
 export default function Products() {
+  // Return null to make the component invisible without removing the file
+  return null;
+  
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -52,7 +54,11 @@ export default function Products() {
                     transition={{ delay: 0.4 }}
                     viewport={{ once: true }}
                   >
-                    <GrassIcon width={240} height={240} className="w-full h-auto drop-shadow-xl" />
+                    <div className="w-full h-auto flex items-center justify-center">
+                      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-neon-pink to-neon-blue flex items-center justify-center">
+                        <span className="text-2xl font-bold">Coming</span>
+                      </div>
+                    </div>
                   </motion.div>
                 </div>
               </div>
@@ -66,7 +72,7 @@ export default function Products() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <span className="text-neon-green">Grass</span>
+                  <span className="text-neon-blue">Coming Soon</span>
                 </motion.h3>
                 <motion.h4 
                   className="text-xl md:text-2xl font-light text-white/90 mb-6"
@@ -75,7 +81,7 @@ export default function Products() {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   viewport={{ once: true }}
                 >
-                  The inbox, reinvented. Again.
+                  Our next innovative product
                 </motion.h4>
                 <motion.p 
                   className="text-white/70 mb-6 leading-relaxed"
@@ -84,7 +90,7 @@ export default function Products() {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  We validated the problem: email has become a source of stress rather than productivity. Through extensive user research, we confirmed that people struggle with inbox overwhelm.
+                  We are currently in the research phase for our next product. Through extensive user interviews and market analysis, we're identifying problems worth solving.
                 </motion.p>
                 <motion.p 
                   className="text-white/70 mb-8 leading-relaxed"
@@ -93,7 +99,7 @@ export default function Products() {
                   transition={{ duration: 0.5, delay: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  Grass is our solution: a radically simplified email experience that helps you process your inbox faster. Swipe effortlessly, triage instantly, respond intelligently.
+                  Stay tuned for updates on our progress. We're committed to building solutions that make a real difference in people's lives.
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -101,14 +107,14 @@ export default function Products() {
                   transition={{ duration: 0.5, delay: 0.6 }}
                   viewport={{ once: true }}
                 >
-                  <button className="button-neon" onClick={() => window.open('https://o-b-v-s-l-y.github.io/grass-website/', '_blank')}>LEARN MORE</button>
+                  <button className="button-neon">SUBSCRIBE FOR UPDATES</button>
                 </motion.div>
               </div>
             </div>
 
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 h-8 w-8 border-t-2 border-r-2 border-neon-green"></div>
-            <div className="absolute -bottom-4 -left-4 h-8 w-8 border-b-2 border-l-2 border-neon-green"></div>
+            <div className="absolute -top-4 -right-4 h-8 w-8 border-t-2 border-r-2 border-neon-blue"></div>
+            <div className="absolute -bottom-4 -left-4 h-8 w-8 border-b-2 border-l-2 border-neon-blue"></div>
           </motion.div>
         </div>
       </div>

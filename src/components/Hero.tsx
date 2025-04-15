@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
+    <section id="about" className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
       {/* Background grid */}
       <div className="absolute inset-0 grid grid-cols-12 gap-2 opacity-20 pointer-events-none">
         {Array.from({ length: 12 * 8 }).map((_, i) => (
@@ -48,14 +48,22 @@ export default function Hero() {
               className="button-neon"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => {
+                const teamSection = document.getElementById('team');
+                if (teamSection) teamSection.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
-              OUR PRODUCTS
+              OUR TEAM
             </motion.button>
             
             <motion.button 
               className="button-glass"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => {
+                const visionSection = document.getElementById('vision');
+                if (visionSection) visionSection.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               THE ALGORITHM
             </motion.button>
